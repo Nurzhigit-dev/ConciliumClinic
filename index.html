@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Consilium International Clinic — международная клиника экспертной медицины в Уральске</title>
+<meta name="description" content="Consilium International Clinic — многопрофильный медцентр в Уральске. Педиатрия, стоматология, неврология, процедурный кабинет. мкр. Астана, 12. Ежедневно 08:00–20:00. Запись: +7 700 890 09 08.">
+<meta name="theme-color" content="#0B3054">
+<link rel="canonical" href="https://nurzhigit-dev.github.io/ConciliumClinic/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Consilium International Clinic">
+<meta property="og:title" content="Consilium International Clinic — клиника экспертной медицины">
+<meta property="og:description" content="Многопрофильный медцентр в Уральске: педиатрия, стоматология, неврология, процедурный кабинет. Ежедневно 08:00–20:00.">
+<meta property="og:image" content="assets/img/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<!-- ─────────────────────────  HEADER  ───────────────────────── -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top" aria-label="Consilium International Clinic — на главную">
+      <img class="brand__mark" src="assets/img/logo.png" alt="" width="512" height="512" decoding="async">
+      <span class="brand__txt">
+        <span class="brand__name">Consilium</span>
+        <span class="brand__sub">International Clinic</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#about">О клинике</a>
+      <a href="#services">Услуги</a>
+      <a href="#procedures">Процедуры</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#visit">Визит</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="hdr__side">
+      <p class="status" id="status" data-open-hour="8" data-close-hour="20">
+        <span class="status__dot" aria-hidden="true"></span>
+        <span class="status__txt">Проверяем время…</span><span class="status__more"></span>
+      </p>
+      <a class="btn btn--teal hdr__cta" href="https://wa.me/77008900907" target="_blank" rel="noopener">Записаться</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ─────────────────────────  HERO  ───────────────────────── -->
+<section class="hero" id="top">
+  <canvas class="hero__canvas" id="mosaic" aria-hidden="true"></canvas>
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="wrap hero__in">
+    <p class="eyebrow eyebrow--light reveal">Добро пожаловать в</p>
+
+    <h1 class="hero__h1">
+      <span class="reveal" style="--d:60ms">Consilium</span>
+      <span class="reveal" style="--d:140ms">International</span>
+      <span class="reveal hero__h1-accent" style="--d:220ms">Clinic</span>
+    </h1>
+
+    <p class="hero__lede reveal" style="--d:320ms">
+      Международная клиника экспертной медицины, где современные технологии
+      сочетаются с профессиональной заботой о каждом пациенте
+    </p>
+
+    <div class="hero__acts reveal" style="--d:400ms">
+      <a class="btn btn--teal btn--lg" href="https://wa.me/77008900907" target="_blank" rel="noopener">
+        Записаться в WhatsApp
+      </a>
+      <a class="btn btn--ghost btn--lg" href="tel:+77008900908">
+        <span class="btn__label">Позвонить</span>
+        <span class="btn__num">+7 700 890 09 08</span>
+      </a>
+    </div>
+
+    <ul class="pillars reveal" style="--d:480ms">
+      <li><span>Многопрофильный медцентр</span></li>
+      <li><span>Новейшее оборудование</span></li>
+      <li><span>Для детей и взрослых</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────────────────  ПОЧЕМУ CONSILIUM  ───────────────────────── -->
+<section class="section" id="about">
+  <div class="wrap">
+    <p class="eyebrow">Почему Consilium?</p>
+
+    <div class="etym">
+      <div class="etym__entry">
+        <p class="etym__word">consilium</p>
+        <p class="etym__meta"><span>лат.</span><span>сущ. ср. р.</span></p>
+        <p class="etym__def">совет экспертов</p>
+      </div>
+      <p class="etym__note">
+        Мы рассматриваем здоровье комплексно и принимаем взвешенные
+        медицинские решения — не по одному симптому, а по всей картине.
+      </p>
+    </div>
+
+    <div class="split">
+      <figure class="shot">
+        <img src="assets/img/dental-procedure.jpg"
+             alt="Два специалиста Consilium работают с пациентом в стоматологическом кабинете"
+             width="1165" height="1280" loading="lazy" decoding="async">
+      </figure>
+
+      <div class="split__body">
+        <h2 class="h2">Наша цель —<br>сохранить ваше здоровье</h2>
+        <p class="lede">
+          Точная диагностика, современные методы лечения и индивидуальный подход
+          — основа нашей работы.
+        </p>
+
+        <dl class="basis">
+          <div class="basis__row">
+            <dt>Точная диагностика</dt>
+            <dd>Обследование на новейшем оборудовании — прежде, чем назначать лечение.</dd>
+          </div>
+          <div class="basis__row">
+            <dt>Современные методы лечения</dt>
+            <dd>Проверенные протоколы и техника, которой располагает клиника.</dd>
+          </div>
+          <div class="basis__row">
+            <dt>Индивидуальный подход</dt>
+            <dd>План лечения собирается под конкретного пациента, взрослого или ребёнка.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  УСЛУГИ  ───────────────────────── -->
+<section class="section section--paper" id="services">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="eyebrow">Услуги</p>
+      <h2 class="h2">Направления клиники</h2>
+      <p class="lede lede--wide">
+        Многопрофильный приём для детей и взрослых. Уточнить расписание конкретного
+        специалиста можно на ресепшн.
+      </p>
+    </header>
+
+    <div class="cards">
+      <article class="card">
+        <p class="card__kicker">Детское направление</p>
+        <h3 class="card__h">Педиатрия и детские специалисты</h3>
+        <ul class="taglist">
+          <li>Педиатр</li>
+          <li>Детский офтальмолог</li>
+          <li>Детский ЛОР</li>
+          <li>Детский эндокринолог</li>
+          <li>Детский невропатолог</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <p class="card__kicker">Стоматология</p>
+        <h3 class="card__h">Стоматологические услуги</h3>
+        <ul class="taglist">
+          <li>Взрослый стоматолог-хирург</li>
+          <li>Детский стоматолог-хирург</li>
+          <li>Ортопед-имплантолог</li>
+          <li>Имплантация</li>
+          <li>Все виды протезирования</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <p class="card__kicker">Процедурный кабинет</p>
+        <h3 class="card__h">Физиотерапия и восстановление</h3>
+        <ul class="taglist">
+          <li>УФО-терапия</li>
+          <li>Лазерно-магнитная терапия</li>
+        </ul>
+        <a class="card__link" href="#procedures">Подробнее о процедурах</a>
+      </article>
+    </div>
+
+    <figure class="band">
+      <img src="assets/img/dental-office.jpg"
+           alt="Стоматологический кабинет Consilium International Clinic с новым оборудованием"
+           width="1101" height="1280" loading="lazy" decoding="async">
+      <figcaption>Стоматологический кабинет клиники</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ─────────────────────────  ПРОЦЕДУРНЫЙ КАБИНЕТ  ───────────────────────── -->
+<section class="section section--navy" id="procedures">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="eyebrow eyebrow--light">Процедурный кабинет</p>
+      <h2 class="h2 h2--light">Процедуры, которые<br>ускоряют восстановление</h2>
+      <p class="lede lede--light lede--wide">
+        Современные физиотерапевтические процедуры, которые дополняют комплексное
+        лечение и помогают ускорить восстановление организма.
+      </p>
+    </header>
+
+    <div class="procs">
+      <article class="proc">
+        <div class="proc__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="15" y="5" width="18" height="7" rx="1.5"/>
+            <path d="M24 12v4"/><path d="M17.5 12.5 15 17M30.5 12.5 33 17"/>
+            <path d="M12 25q12 7 24 0"/>
+            <path d="M8 33q16 9 32 0" opacity=".55"/>
+            <path d="M5 41q19 10 38 0" opacity=".3"/>
+          </svg>
+        </div>
+        <h3 class="proc__h">УФО-терапия</h3>
+        <p class="proc__p">
+          Ультрафиолетовое облучение применяется для воздействия на различные
+          участки тела по назначению врача.
+        </p>
+      </article>
+
+      <article class="proc">
+        <div class="proc__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4 24 25 32 4"/>
+            <circle cx="24" cy="30" r="3.5"/>
+            <path d="M13 23q-5 7 0 14" opacity=".55"/><path d="M35 23q5 7 0 14" opacity=".55"/>
+            <path d="M7 19q-7 11 0 22" opacity=".3"/><path d="M41 19q7 11 0 22" opacity=".3"/>
+          </svg>
+        </div>
+        <h3 class="proc__h">Лазерно-магнитная терапия</h3>
+        <p class="proc__p">
+          Инфракрасная лазерно-магнитная терапия, применяемая в комплексном лечении
+          для уменьшения боли, воспаления и поддержки процессов восстановления организма.
+        </p>
+      </article>
+    </div>
+
+    <p class="note">
+      Процедуры проводятся только по назначению врача. Записаться на консультацию —
+      <a href="https://wa.me/77008900907" target="_blank" rel="noopener">WhatsApp клиники</a>
+      или <a href="tel:+77008900908">+7 700 890 09 08</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ─────────────────────────  ВРАЧИ  ───────────────────────── -->
+<section class="section" id="doctors">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="eyebrow">Специалисты</p>
+      <h2 class="h2">Врачи клиники</h2>
+    </header>
+
+    <div class="docs">
+      <article class="doc">
+        <img src="assets/img/doctor-khvan.jpg"
+             alt="Хван Олег Витальевич, ортопед-имплантолог Consilium International Clinic"
+             width="472" height="590" loading="lazy" decoding="async">
+        <div class="doc__body">
+          <p class="doc__tag">Ведущий специалист</p>
+          <h3 class="doc__name">Хван Олег Витальевич</h3>
+          <p class="doc__role">Ортопед-имплантолог</p>
+          <p class="doc__exp"><span>Стаж</span> 21 год</p>
+          <ul class="taglist taglist--sm">
+            <li>Имплантация</li>
+            <li>Все виды протезирования</li>
+            <li>Восстановление зубного ряда</li>
+            <li>Эстетическое и функциональное протезирование</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="doc">
+        <img src="assets/img/doctor-musina.jpg"
+             alt="Мусина Бибинур Ермековна, детский невропатолог Consilium International Clinic"
+             width="506" height="632" loading="lazy" decoding="async">
+        <div class="doc__body">
+          <p class="doc__tag">Детское направление</p>
+          <h3 class="doc__name">Мусина Бибинур Ермековна</h3>
+          <p class="doc__role">Детский невропатолог</p>
+          <p class="doc__exp"><span>Стаж</span> 17 лет</p>
+          <ul class="taglist taglist--sm">
+            <li>Консультативный приём</li>
+            <li>Выявление и диагностика</li>
+            <li>Лечение заболеваний нервной системы</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  ПЛАНИРУЕТЕ ВИЗИТ  ───────────────────────── -->
+<section class="section section--paper" id="visit">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="eyebrow">Планируете визит?</p>
+      <h2 class="h2">Как нас найти</h2>
+      <p class="lede lede--wide">
+        Мы стремимся сделать медицинскую помощь доступной и комфортной
+        для каждого пациента.
+      </p>
+    </header>
+
+    <div class="visit">
+      <div class="visit__col">
+        <p class="label">Адрес</p>
+        <p class="visit__big">мкр. Астана, 12</p>
+        <p class="visit__sub">Уральск, Западно-Казахстанская область</p>
+        <a class="btn btn--navy" href="https://2gis.kz/uralsk/geo/70000001113662591" target="_blank" rel="noopener">
+          Открыть в 2ГИС
+        </a>
+      </div>
+
+      <div class="visit__col">
+        <p class="label">График работы</p>
+        <p class="visit__big">Ежедневно<br>08:00 — 20:00</p>
+
+        <div class="clock" id="clock">
+          <div class="clock__bar" aria-hidden="true">
+            <div class="clock__open"></div>
+            <div class="clock__now" id="clockNow"></div>
+          </div>
+          <div class="clock__scale" aria-hidden="true">
+            <span>00</span><span>08</span><span>20</span><span>24</span>
+          </div>
+          <p class="clock__msg" id="clockMsg">Время в клинике уточняется…</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  КОНТАКТЫ  ───────────────────────── -->
+<section class="section section--navy" id="contacts">
+  <div class="wrap">
+    <header class="sechead">
+      <p class="eyebrow eyebrow--light">Мы ценим ваше время</p>
+      <h2 class="h2 h2--light">Свяжитесь удобным<br>способом</h2>
+      <p class="lede lede--light lede--wide">
+        Записаться на приём, получить консультацию или связаться с аптекой.
+      </p>
+    </header>
+
+    <ul class="chans">
+      <li class="chan">
+        <p class="chan__use">Записаться и задать вопрос</p>
+        <a class="chan__num" href="tel:+77008900908">+7 700 890 09 08</a>
+        <p class="chan__what">Ресепшн — звонок</p>
+      </li>
+      <li class="chan">
+        <p class="chan__use">Написать в клинику</p>
+        <a class="chan__num" href="https://wa.me/77008900907" target="_blank" rel="noopener">+7 700 890 09 07</a>
+        <p class="chan__what">WhatsApp клиники</p>
+      </li>
+      <li class="chan">
+        <p class="chan__use">Уточнить наличие препарата</p>
+        <a class="chan__num" href="https://wa.me/77008900709" target="_blank" rel="noopener">+7 700 890 07 09</a>
+        <p class="chan__what">WhatsApp аптеки</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────────────────────  FOOTER  ───────────────────────── -->
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <img src="assets/img/logo.png" alt="" width="512" height="512" loading="lazy" decoding="async">
+      <div>
+        <p class="foot__name">Consilium International Clinic</p>
+        <p class="foot__tag">Международная клиника экспертной медицины</p>
+      </div>
+    </div>
+
+    <nav class="foot__links" aria-label="Ссылки и контакты">
+      <a href="https://2gis.kz/uralsk/geo/70000001113662591" target="_blank" rel="noopener">2ГИС</a>
+      <a href="https://www.instagram.com/consilium_clinic.kz" target="_blank" rel="noopener">Instagram</a>
+      <a href="tel:+77008900908">+7 700 890 09 08</a>
+      <a href="https://wa.me/77008900907" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+
+    <p class="foot__legal">
+      мкр. Астана, 12, Уральск · ежедневно 08:00—20:00<br>
+      <span>© <span id="year">2026</span> Consilium International Clinic. Информация на сайте не является публичной офертой и не заменяет консультацию врача.</span>
+    </p>
+  </div>
+</footer>
+
+<!-- ─────────────────────────  MOBILE ACTION BAR  ───────────────────────── -->
+<div class="dock" aria-label="Быстрая связь">
+  <a class="dock__btn" href="tel:+77008900908">Позвонить</a>
+  <a class="dock__btn dock__btn--teal" href="https://wa.me/77008900907" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Consilium International Clinic",
+  "description": "Международная клиника экспертной медицины: педиатрия, стоматология, неврология, процедурный кабинет.",
+  "image": "https://nurzhigit-dev.github.io/ConciliumClinic/assets/img/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "мкр. Астана, 12",
+    "addressLocality": "Уральск",
+    "addressRegion": "Западно-Казахстанская область",
+    "addressCountry": "KZ"
+  },
+  "telephone": "+7 700 890 09 08",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
+  "sameAs": [
+    "https://2gis.kz/uralsk/geo/70000001113662591",
+    "https://www.instagram.com/consilium_clinic.kz"
+  ],
+  "availableService": [
+    { "@type": "MedicalProcedure", "name": "УФО-терапия" },
+    { "@type": "MedicalProcedure", "name": "Лазерно-магнитная терапия" },
+    { "@type": "MedicalProcedure", "name": "Имплантация и протезирование" }
+  ]
+}
+</script>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
