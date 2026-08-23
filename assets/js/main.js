@@ -256,7 +256,7 @@
   --------------------------------------------------------- */
   (function reveal() {
     var sel = ['.sechead', '.etym', '.shot', '.split__body', '.card',
-               '.band', '.proc', '.doc', '.visit__col', '.chan', '.note'];
+               '.proc', '.doc', '.visit__col', '.chan', '.note'];
 
     sel.forEach(function (s) {
       var nodes = document.querySelectorAll(s);

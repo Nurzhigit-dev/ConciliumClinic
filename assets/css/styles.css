@@ -466,7 +466,6 @@ section[id] { scroll-margin-top: calc(var(--hdr-h) + 12px); }
 .cards {
   display: grid;
   gap: 14px;
-  margin-bottom: clamp(44px, 6vw, 76px);
 }
 .card {
   background: var(--white);
@@ -508,29 +507,7 @@ section[id] { scroll-margin-top: calc(var(--hdr-h) + 12px); }
 @media (min-width: 720px)  { .cards { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1020px) { .cards { grid-template-columns: repeat(3, 1fr); } }
 
-/* ---------- 12. Photo band ---------- */
-.band {
-  position: relative;
-  border-radius: var(--r);
-  overflow: hidden;
-  background: var(--navy-900);
-}
-.band img {
-  width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 45%;
-}
-.band figcaption {
-  position: absolute; left: 0; bottom: 0; right: 0;
-  padding: 34px 20px 16px;
-  font-family: var(--f-mono); font-size: .7rem; letter-spacing: .12em;
-  text-transform: uppercase; color: #fff;
-  background: linear-gradient(to top, rgba(6,32,58,.9), transparent);
-}
-@media (min-width: 760px) {
-  .band img { aspect-ratio: 16 / 8; }
-  .band figcaption { padding: 44px 30px 22px; }
-}
-
-/* ---------- 13. Procedures ---------- */
+/* ---------- 12. Procedures ---------- */
 .procs { display: grid; gap: 14px; }
 .proc {
   border: 1px solid var(--line-navy);
@@ -570,7 +547,7 @@ section[id] { scroll-margin-top: calc(var(--hdr-h) + 12px); }
   background: var(--white);
   display: flex; flex-direction: column;
 }
-.doc img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 22%; }
+.doc img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; }
 .doc__body { padding: clamp(22px, 3vw, 30px); display: flex; flex-direction: column; }
 .doc__tag {
   display: inline-block; align-self: flex-start;
@@ -592,11 +569,18 @@ section[id] { scroll-margin-top: calc(var(--hdr-h) + 12px); }
 .doc__exp span { color: var(--ink-50); letter-spacing: .14em; text-transform: uppercase; font-size: .68rem; margin-right: 8px; }
 
 /* From tablet up the card turns on its side: portrait left, credentials right —
-   keeps the photo at its native resolution instead of blowing it up. */
+   keeps the photo at its native resolution instead of blowing it up.
+   The portrait keeps its own 2:3 crop rather than stretching to whatever height
+   the text happens to be, so both doctors are framed identically. */
 @media (min-width: 560px) {
   .doc { flex-direction: row; }
-  .doc img { width: 40%; max-width: 236px; flex: none; align-self: stretch; aspect-ratio: auto; }
-  .doc__body { flex: 1 1 auto; justify-content: center; }
+  .doc img {
+    width: 40%; max-width: 236px; flex: none;
+    align-self: flex-start;
+    aspect-ratio: 2 / 3;
+    object-position: center;
+  }
+  .doc__body { flex: 1 1 auto; }
 }
 @media (min-width: 1000px) { .docs { grid-template-columns: 1fr 1fr; align-items: stretch; } }
 
