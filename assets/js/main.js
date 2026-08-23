@@ -211,10 +211,10 @@
     var nav = document.getElementById('nav');
     var burger = document.getElementById('burger');
 
+    function onScroll() {
+      if (hdr) { hdr.classList.toggle('is-stuck', window.scrollY > 8); }
+    }
     if (hdr) {
-      var onScroll = function () {
-        hdr.classList.toggle('is-stuck', window.scrollY > 8);
-      };
       onScroll();
       window.addEventListener('scroll', onScroll, { passive: true });
     }
@@ -226,7 +226,9 @@
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
       burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
       document.body.style.overflow = open ? 'hidden' : '';
-      if (open) { hdr.classList.add('is-stuck'); }
+      /* The open panel needs a solid bar behind it; on close hand the
+         header back to the scroll position instead of leaving it stuck. */
+      if (open && hdr) { hdr.classList.add('is-stuck'); } else { onScroll(); }
     }
 
     burger.addEventListener('click', function () {
